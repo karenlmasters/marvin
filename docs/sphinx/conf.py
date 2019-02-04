@@ -112,6 +112,9 @@ language = None
 
 highlight_language = 'default'
 
+# Use this kernel instead of the one stored in the notebook metadata:
+nbsphinx_kernel_name = 'python3'
+
 # Include TODOs when todolist:: is used?
 todo_include_todos = True
 
