@@ -20,7 +20,7 @@ Tutorials
    :hidden:
 
    Basics of Marvin <notebooks/Basics_of_Marvin.ipynb>
-   Lean Tutorial <lean-tutorial>
+   Lean Tutorial <notebooks/lean-tutorial.ipynb>
    Plotting Tutorial <plotting-tutorial>
    Marvin Boolean SQL Syntax <boolean-search-tutorial>
    Marvin Queries <notebooks/marvin_queries.ipynb>
