@@ -72,7 +72,7 @@ extensions = [
     'sphinxcontrib.autohttp.flaskqref',
     'sphinx.ext.inheritance_diagram',
     'sphinx.ext.intersphinx', 'docudatamodel',
-    'sphinx_issues', 'nbsphinx']
+    'sphinx_issues']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -111,9 +111,6 @@ release = marvin_version
 language = None
 
 highlight_language = 'default'
-
-# Use this kernel instead of the one stored in the notebook metadata:
-nbsphinx_kernel_name = 'python3'
 
 # Include TODOs when todolist:: is used?
 todo_include_todos = True
@@ -360,10 +357,6 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 # texinfo_no_detailmenu = False
-
-# -- Options for nbsphinx -----------------------------------------
-
-nbsphinx_prolog = """:download:`Download this as a Jupyter notebook! </{{ env.doc2path(env.docname, base=None) }}>`"""
 
 # -- Extensions to the  Napoleon GoogleDocstring class ---------------------
 
