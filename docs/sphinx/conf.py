@@ -72,7 +72,7 @@ extensions = [
     'sphinxcontrib.autohttp.flaskqref',
     'sphinx.ext.inheritance_diagram',
     'sphinx.ext.intersphinx', 'docudatamodel',
-    'sphinx_issues']
+    'sphinx_issues', 'nbsphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -354,6 +354,10 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 # texinfo_show_urls = 'footnote'
+
+# -- Options for nbsphinx -----------------------------------------
+
+ nbsphinx_prolog = """:download:`Download this as a Jupyter notebook! </{{ env.doc2path(env.docname, base=None) }}>`"""
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 # texinfo_no_detailmenu = False
