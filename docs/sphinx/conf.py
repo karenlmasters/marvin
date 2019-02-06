@@ -359,6 +359,7 @@ texinfo_documents = [
 
 nbsphinx_prolog = """:download:`Download this as a Jupyter notebook! </{{ env.doc2path(env.docname, base=None) }}>`"""
 nbsphinx_execute = 'never'
+nbsphinx_allow_errors = True
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 # texinfo_no_detailmenu = False
