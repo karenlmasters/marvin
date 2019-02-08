@@ -6,7 +6,7 @@
 # @Author: Brian Cherinka
 # @Date:   2018-06-21 17:01:09
 # @Last modified by:   andrews
-# @Last modified time: 2019-02-08 16:02:08
+# @Last modified time: 2019-02-08 16:02:04
 
 from __future__ import absolute_import, division, print_function
 
@@ -20,7 +20,6 @@ import marvin
 import marvin.tools.plate
 from marvin.core.exceptions import MarvinError
 
-import marvin.extern.sdss_access.path
 import marvin.extern.sdss_access.sync
 
 __ALL__ = ['VACContainer', 'VACMixIn']
