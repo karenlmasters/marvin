@@ -6,8 +6,8 @@
 # @Filename: maps.py
 # @License: BSD 3-clause (http://www.opensource.org/licenses/BSD-3-Clause)
 #
-# @Last modified by: José Sánchez-Gallego (gallegoj@uw.edu)
-# @Last modified time: 2018-11-14 10:49:45
+# @Last modified by:   andrews
+# @Last modified time: 2019-02-08 15:02:87
 
 
 from __future__ import absolute_import, division, print_function
@@ -96,7 +96,7 @@ class Maps(MarvinToolsClass, NSAMixIn, DAPallMixIn, GetApertureMixIn):
         MarvinToolsClass.__init__(self, input=input, filename=filename,
                                   mangaid=mangaid, plateifu=plateifu,
                                   mode=mode, data=data, release=release,
-                                  drpall=drpall, download=download)
+                                  drpall=drpall, download=download) # HERE
 
         NSAMixIn.__init__(self, nsa_source=nsa_source)
 
