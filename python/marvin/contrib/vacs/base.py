@@ -6,7 +6,7 @@
 # @Author: Brian Cherinka
 # @Date:   2018-06-21 17:01:09
 # @Last modified by:   andrews
-# @Last modified time: 2019-02-08 16:02:04
+# @Last modified time: 2019-02-18 11:02:03
 
 from __future__ import absolute_import, division, print_function
 
@@ -20,7 +20,7 @@ import marvin
 import marvin.tools.plate
 from marvin.core.exceptions import MarvinError
 
-import marvin.extern.sdss_access.sync
+import sdss_access.sync
 
 __ALL__ = ['VACContainer', 'VACMixIn']
 
@@ -75,13 +75,13 @@ class VACMixIn(object, six.with_metaclass(abc.ABCMeta)):
 
     def __init__(self):
 
-        if not marvin.extern.sdss_access.sync.RsyncAccess:
+        if not sdss_access.sync.RsyncAccess:
             raise MarvinError('sdss_access is not installed')
         else:
             self._release = marvin.config.release
             is_public = 'DR' in self._release
             rsync_release = self._release.lower() if is_public else None
-            self.rsync_access = marvin.extern.sdss_access.sync.RsyncAccess(public=is_public, release=rsync_release)
+            self.rsync_access = sdss_access.sync.RsyncAccess(public=is_public, release=rsync_release)
 
     def __repr__(self):
         return '<VAC (name={0}, description={1})>'.format(self.name, self.description)
