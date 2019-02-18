@@ -39,6 +39,7 @@ docs/sphinx/jupyter/.ipynb_checkpoints
 docs/sphinx/logs
 docs/sphinx/tools/logs
 docs/sphinx/tutorials/logs
+docs/sphinx/tutorials/notebooks/.ipynb_checkpoints
 etc/logs
 /logs
 python/logs
