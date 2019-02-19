@@ -6,7 +6,7 @@
 # @Author: Brian Cherinka
 # @Date:   2018-06-21 17:01:09
 # @Last modified by:   andrews
-# @Last modified time: 2019-02-18 23:02:01
+# @Last modified time: 2019-02-19 13:02:15
 
 from __future__ import absolute_import, division, print_function
 
@@ -24,7 +24,7 @@ from marvin.core.exceptions import MarvinError
 try:
     import sdss_access.sync
 except ModuleNotFoundError as e:
-    import marvin.extern
+    import marvin.extern.sdss_access
     raise
 
 __ALL__ = ['VACContainer', 'VACMixIn']
