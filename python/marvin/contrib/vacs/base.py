@@ -6,7 +6,7 @@
 # @Author: Brian Cherinka
 # @Date:   2018-06-21 17:01:09
 # @Last modified by:   andrews
-# @Last modified time: 2019-02-18 11:02:03
+# @Last modified time: 2019-02-18 22:02:52
 
 from __future__ import absolute_import, division, print_function
 
@@ -20,7 +20,13 @@ import marvin
 import marvin.tools.plate
 from marvin.core.exceptions import MarvinError
 
-import sdss_access.sync
+
+try:
+    import sdss_access.sync
+except ModuleNotFoundError as e:
+    import sys
+    print(sys.path)
+    raise
 
 __ALL__ = ['VACContainer', 'VACMixIn']
 
