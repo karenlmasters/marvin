@@ -1,7 +1,24 @@
 Marvin's Change Log
 ===================
 
-[2.3.1] - unreleased
+[2.3.3] - unreleased
+--------------------
+
+[2.3.2] - 2019/02/27
+--------------------
+
+Added
+^^^^^
+- Support for MPL-8
+
+Fixed
+^^^^^
+- Issue :issue:`629` - web table of search results broken
+- Issue :issue:`627` - web query displaying error message
+- Issue :issue:`630` - broken web links on query page
+- Issue :issue:`591` - broken query streaming return all results 
+
+[2.3.1] - 2018/12/10
 --------------------
 
 Refactored
