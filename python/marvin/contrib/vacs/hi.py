@@ -7,6 +7,7 @@
 # @Date:   2018-10-11 17:51:43
 # @Last modified by:   Brian Cherinka
 # @Last Modified time: 2018-11-29 17:23:15
+# Trying to update for DR17 - Karen Masters, 7th July 2021. 
 
 from __future__ import print_function, division, absolute_import
 
@@ -37,7 +38,7 @@ class HIVAC(VACMixIn):
     # Required parameters
     name = 'HI'
     description = 'Returns HI summary data and spectra'
-    version = {'MPL-7': 'v1_0_1', 'DR15': 'v1_0_1', 'DR16': 'v1_0_2'}
+    version = {'MPL-7': 'v1_0_1', 'DR15': 'v1_0_1', 'DR16': 'v1_0_2', 'DR17': 'v2_0_1'}
 
     # optional Marvin Tools to attach your vac to
     include = (marvin.tools.cube.Cube, marvin.tools.maps.Maps, marvin.tools.modelcube.ModelCube)
